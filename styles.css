@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: var(--app-height);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e1124;
+  color: #ffffff;
+  font-family: "Open Sans";
+}
+
+header {
+  flex-basis: 70px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0e1124;
+  color: #ffffff;
+  gap: 2rem;
+  font-family: "Open Sans";
+  overflow-y: auto;
+}
+
+.title {
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.form {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.form-input label {
+  font-size: .7rem;
+}
+
+.form-input input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgba(3, 3, 3, 0.4);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Open Sans";
+}
+
+.form-input input:focus {
+  outline: 2px solid #1ab73c;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  background-color: #1ab73c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 400ms ease-in-out;
+}
+
+.form button[type="reset"] {
+  width: 100%;
+  background-color: rgba(3, 3, 3, 0.4);
+  color: #ffffff;
+  border: 1px solid rgba(3, 3, 3, 0.4);
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 400ms ease-in-out;
+}
+
+.form button[type="reset"]:hover {
+  border-color: #4dd66b;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #4dd66b;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alert {
+  opacity: 0;
+  width: 70%;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: none;
+  font-size: 0.8rem;
+  border-left: 2px solid #e6bb21;
+  background: linear-gradient(95deg, #fff 3.06%, rgba(255, 255, 255, 0) 100%),
+    #0e1124;
+  background-blend-mode: overlay, normal;
+}
+
+.fade-in {
+  animation: fadeIn 500ms ease-in-out forwards;
+}
+
+footer {
+  flex-basis: 50px;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.5rem;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

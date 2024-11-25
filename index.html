@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation Javascript - Aristée Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="title">Formation Javascript et son écosystème</h1>
+      <form class="form">
+        <div class="form-input">
+          <label for="valo">Valorant</label>
+          <input
+            type="text"
+            placeholder="Une partie en minute"
+            maxlength="3"
+            id="valo"
+          />
+        </div>
+        <div class="form-input">
+          <label for="lol">League of Legends</label>
+          <input
+            type="text"
+            placeholder="Une partie en minute"
+            maxlength="3"
+            id="lol"
+          />
+        </div>
+        <div class="form-input">
+          <label for="hearthstone">Hearthstone</label>
+          <input
+            type="text"
+            placeholder="Une partie en minute"
+            maxlength="3"
+            id="hearthstone"
+          />
+        </div>
+        <div class="form-input">
+          <label for="time-to-play">Temps de jeu</label>
+          <input
+            type="text"
+            placeholder="Temps de jeu en minute"
+            maxlength="3"
+            id="time-to-play"
+          />
+        </div>
+        <div class="button-group">
+          <button type="reset" id="reset">Annuler</button>
+          <button type="submit" id="submit">Calculer</button>
+        </div>
+      </form>
+      <div class="alert">
+        <p id="alert"></p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Propulsé par
+        <a href="https://aristee-studio.fr" target="_blank">Aristée Studio</a>
+      </p>
+    </footer>
+  </body>
+</html>
